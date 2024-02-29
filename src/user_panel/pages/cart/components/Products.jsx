@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCategorySkeleton from '../../../commons/skeletons/ProductCategorySkeleton';
 
-const Products = () => {
+const ProductsCart = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -69,4 +69,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsCart;
