@@ -31,6 +31,8 @@ import AboutContent from './admin_panel/pages/content/components/About';
 import EditTestimonial from './admin_panel/pages/content/components/EditTestimonial';
 import AddTestimonial from './admin_panel/pages/content/components/AddTestimonial';
 import HomeContent from './admin_panel/pages/content/components/Home';
+import AddHeaderSlide from './admin_panel/pages/content/components/AddHeaderSlide';
+import EditHeaderSlide from './admin_panel/pages/content/components/EditHeaderSlide';
 // customers
 import Customers from './admin_panel/pages/customers/index';
 import AllCustomers from './admin_panel/pages/customers/components/AllCustomers';
@@ -40,10 +42,13 @@ import Products from './admin_panel/pages/products/index';
 import AllProducts from './admin_panel/pages/products/components/AllProducts';
 import ProductCategories from './admin_panel/pages/products/components/ProductCategories';
 import AddProduct from './admin_panel/pages/products/components/AddProduct';
+import AddCategory from './admin_panel/pages/products/components/AddCategory';
+import EditCategory from './admin_panel/pages/products/components/EditCategory';
 import LoginAdmin from './admin_panel/pages/login/index';
 import RegisterAdmin from './admin_panel/pages/register/index';
 // admin layouts
 import AdminRootLayout from './admin_panel/layout/RootLayout';
+import Reviews from './admin_panel/pages/reviews';
 
 // creating various routers
 
@@ -81,8 +86,10 @@ const router = createBrowserRouter(
         {/* products */}
         <Route path="product" element={<Products />}>
           <Route path="all" element={<AllProducts />}></Route>
-          <Route path="categories" element={<ProductCategories />}></Route>
+          <Route path="category" element={<ProductCategories />}></Route>
           <Route path="add" element={<AddProduct />}></Route>
+          <Route path="category/add" element={<AddCategory />} />
+          <Route path="category/edit" element={<EditCategory />} />
         </Route>
         {/* orders */}
         <Route path="orders" element={<h1>Orders</h1>} />
@@ -98,7 +105,10 @@ const router = createBrowserRouter(
 
         {/* content */}
         <Route path="content" element={<ContentManagement />}>
+          {/* home */}
           <Route path="home" element={<HomeContent />} />
+          <Route path="home/add" element={<AddHeaderSlide />} />
+          <Route path="home/edit" element={<EditHeaderSlide />} />
           {/* about */}
           <Route path="about" element={<AboutContent />} />
           <Route path="about/add" element={<AddTestimonial />} />
@@ -106,7 +116,7 @@ const router = createBrowserRouter(
         </Route>
 
         {/* reviews */}
-        <Route path="reviews" element={<h1>reviews</h1>} />
+        <Route path="reviews" element={<Reviews />} />
         {/* promotions */}
         <Route path="promotions" element={<h1>promotions</h1>} />
       </Route>

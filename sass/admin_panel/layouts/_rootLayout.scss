@@ -5,6 +5,8 @@
 
   header {
     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: $bg-light;
@@ -15,6 +17,15 @@
 
     button {
       font-size: 16px;
+    }
+  }
+
+  header.btw {
+    justify-content: center;
+    @include breakpointDynamic(550px) {
+      & {
+        justify-content: space-between;
+      }
     }
   }
   .admin-content-container {
