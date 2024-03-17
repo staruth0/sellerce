@@ -46,11 +46,14 @@ import AddCategory from './admin_panel/pages/products/components/AddCategory';
 import EditCategory from './admin_panel/pages/products/components/EditCategory';
 import LoginAdmin from './admin_panel/pages/login/index';
 import RegisterAdmin from './admin_panel/pages/register/index';
+// Notfound
+import NotFoundAdmin from './admin_panel/pages/NotFound';
 // admin layouts
 import AdminRootLayout from './admin_panel/layout/RootLayout';
 import Reviews from './admin_panel/pages/reviews';
 import Orders from './admin_panel/pages/orders';
 import OrderDetails from './admin_panel/pages/orders/components/OrderDetails';
+import EditProduct from './admin_panel/pages/products/components/EditProduct';
 // creating various routers
 
 const router = createBrowserRouter(
@@ -89,6 +92,7 @@ const router = createBrowserRouter(
           <Route path="all" element={<AllProducts />}></Route>
           <Route path="categories" element={<ProductCategories />}></Route>
           <Route path="add" element={<AddProduct />}></Route>
+          <Route path="edit/:id" element={<EditProduct />}></Route>
           <Route path="categories/add" element={<AddCategory />} />
           <Route path="categories/edit/:id" element={<EditCategory />} />
         </Route>
@@ -121,6 +125,8 @@ const router = createBrowserRouter(
         <Route path="reviews" element={<Reviews />} />
         {/* promotions */}
         <Route path="promotions" element={<h1>promotions</h1>} />
+        {/* notfound */}
+        <Route path="*" element={<NotFoundAdmin />} />
       </Route>
       {/* admin login and register */}
       <Route path="/admin/login" element={<LoginAdmin />} />
