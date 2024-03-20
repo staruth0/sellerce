@@ -7,7 +7,7 @@ import {
 
 // user pages
 import About from './user_panel/pages/about/index';
-import Home from './user_panel/pages/home/index';
+import Home from './user_panel/pages/home/Home';
 import Cart from './user_panel/pages/cart/index';
 import Contact from './user_panel/pages/contact/index';
 import Category from './user_panel/pages/product_category/index';
@@ -66,9 +66,9 @@ const router = createBrowserRouter(
       ============================== */}
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="category" element={<Category />} />
-        <Route path="detail" element={<Detail />} />
-        <Route path="overview" element={<Overview />} />
+        <Route path=":name" element={<Category />} />
+        <Route path="buy/:name" element={<Detail />} />
+        <Route path="overview/:name" element={<Overview />} />
         <Route path="cart" element={<Cart />} />
         {/* contact */}
         <Route path="contact" element={<Contact />}>

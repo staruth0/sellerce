@@ -6,22 +6,23 @@ import moneyBack from '../../../assets/icons/detail/Money Box.svg';
 import support from '../../../assets/icons/detail/24 Hours Day Support.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import ProductDetailImage from './ProductDetailImage';
 
-const ProductDetail = () => {
-  const [visible, setVisible] = useState(1);
+const ProductDetail = ({ product }) => {
+  // const [visible, setVisible] = useState(1);
 
-  const FuncVisible = (p) => {
-    setVisible(p);
-  };
+  // const FuncVisible = (p) => {
+  //   setVisible(p);
+  // };
 
   return (
     <section id="product-detail">
       <div className="container">
         <div className="product-detail-columns">
           {/* image container */}
-          <div className="img">
-            {/* small images */}
-            <div className="small-images-container">
+          {/* <div className="img"> */}
+          {/* small images */}
+          {/* <div className="small-images-container">
               <button
                 onClick={() => {
                   FuncVisible(1);
@@ -46,9 +47,9 @@ const ProductDetail = () => {
               >
                 <img src={bigImage3} alt="" />
               </button>
-            </div>
-            {/* big image */}
-            <div className="big-image">
+            </div> */}
+          {/* big image */}
+          {/* <div className="big-image">
               <img
                 className={visible === 1 ? 'visible' : ''}
                 src={bigImage1}
@@ -67,21 +68,16 @@ const ProductDetail = () => {
                 alt="watch"
                 style={{ transform: `translateX(${-100 * (visible - 1)}%)` }}
               />
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           {/* text */}
+          <ProductDetailImage />
           <div className="text">
-            <h2>Apple Watch Series 9</h2>
-            <p>
-              Experience power and style with the MacBook Pro 2020. It features
-              Intel processors, a stunning Retina display, Touch Bar, improved
-              keyboard, ample storage, and long-lasting battery life. Connect
-              effortlessly with Thunderbolt 3 ports and enjoy seamless macOS
-              integration. Elevate your computing with the MacBook Pro 2020.
-            </p>
+            <h2>{product.name}</h2>
+            <p>{product.description.long_description}</p>
             <div className="rating">
               <p>5 Stars</p>
-              <Link to="/">5 reviews</Link>
+              <a href="#reviews">5 reviews</a>
             </div>
             <div className="price">
               <p className="discounted-price">$400</p>
