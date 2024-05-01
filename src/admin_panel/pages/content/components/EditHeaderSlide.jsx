@@ -8,6 +8,7 @@ import NotFound from '../../NotFound';
 const EditHeaderSlide = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+<<<<<<< HEAD
   const headerSlides = [
     {
       id: 1,
@@ -40,6 +41,53 @@ const EditHeaderSlide = () => {
   const editSlide =
     headerSlides.find((slide) => slide.id === parseInt(id)) || [];
   const [previewImage, setPreviewImage] = useState(editSlide.image);
+=======
+  // const headerSlides = [
+  //   {
+  //     id: 1,
+  //     name: 'Apple Watch Series 9',
+  //     url: 'url to apple watch',
+  //     description: 'The Next Level Adventure',
+  //     position: '1',
+  //     image:
+  //       'https://www.apple.com/v/watch/bk/images/overview/series-9/tile_s9_avail__c104b8nuoec2_large.jpg',
+  //   },
+  //   {
+  //     id: 2,
+  //     name: 'iPad Pro',
+  //     url: 'url to iPad Pro',
+  //     description: 'Change your life with just a click😂',
+  //     position: '2',
+  //     image:
+  //       'https://www.apple.com/v/ipad/home/ci/images/overview/hero/ipad_pro_hero__bh3eq6sqfjw2_large.jpg',
+  //   },
+  //   {
+  //     id: 3,
+  //     name: 'MacBook Pro',
+  //     url: 'url to macbook',
+  //     description: 'Macbook na book',
+  //     position: '3',
+  //     image:
+  //       'https://www.apple.com/newsroom/images/2023/10/apple-unveils-new-macbook-pro-featuring-m3-chips/article/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.large.jpg',
+  //   },
+  // ];
+  const editSlide = async () => {
+    try {
+      const response = await fetch(
+        `https://appleproductsbackend.vercel.app/v1/hero/${id}`
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.log('An error occurred:', error);
+      throw error;
+    }
+  };
+  console.log(editSlide);
+
+  const [previewImage, setPreviewImage] = useState(editSlide.image);
+  console.log(previewImage);
+>>>>>>> ef28d929a132173140a497081765af48e849093b
   const [productName, setProductName] = useState(editSlide.name);
   const [image, setImage] = useState(null);
   const [description, setDescription] = useState(editSlide.description);
@@ -63,6 +111,7 @@ const EditHeaderSlide = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+<<<<<<< HEAD
     const apiUrl = `api/content/headerSlide/edit/${id}`;
 
     const data = {
@@ -72,6 +121,15 @@ const EditHeaderSlide = () => {
       category: category,
       url: url,
       position: position,
+=======
+    const apiUrl = `/${id}`;
+
+    const data = {
+      product_name: productName,
+      description: description,
+      category_name: category,
+      slide_position: position,
+>>>>>>> ef28d929a132173140a497081765af48e849093b
     };
 
     alert(
@@ -79,9 +137,12 @@ const EditHeaderSlide = () => {
     );
 
     PerformFetchPut(apiUrl, data);
+<<<<<<< HEAD
     setTimeout(() => {
       navigate('/admin/content/home');
     }, 1000);
+=======
+>>>>>>> ef28d929a132173140a497081765af48e849093b
   };
 
   const idExists = editSlide.length !== 0 ? true : false;

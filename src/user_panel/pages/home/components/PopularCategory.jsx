@@ -240,7 +240,7 @@ const PopularCategory = ({ blurBackground }) => {
               <li className="cateogry-name-section-large">Apple Airpods</li>
               <li className="shop-category-button">
                 <Link
-                  to={`/${'airpods'.toLowerCase().replace(/\s/g, '')}`}
+                  to={`/${'airpod'.toLowerCase().replace(/\s/g, '')}`}
                   className="showcase-link shop-watch-category"
                 >
                   SHOP NOW

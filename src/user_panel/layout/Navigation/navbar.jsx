@@ -146,7 +146,11 @@ const Navbar = ({ heroHeight, setBlurBackground }) => {
         setFetchedData([
           {
             _id: 2,
+<<<<<<< HEAD
             name: 'Macbooks',
+=======
+            name: 'Macbook',
+>>>>>>> ef28d929a132173140a497081765af48e849093b
             url: require('../../assets/images/category_images/macbooks.png'),
             desc: 'Sleek and powerful for all your computing needs.',
           },
@@ -158,13 +162,21 @@ const Navbar = ({ heroHeight, setBlurBackground }) => {
           },
           {
             _id: 4,
+<<<<<<< HEAD
             name: 'iWatch',
+=======
+            name: 'Watch',
+>>>>>>> ef28d929a132173140a497081765af48e849093b
             url: require('../../assets/images/category_images/iwatch.png'),
             desc: 'Smartwatches that keep you connected and fit.',
           },
           {
             _id: 5,
+<<<<<<< HEAD
             name: 'AirPods',
+=======
+            name: 'AirPod',
+>>>>>>> ef28d929a132173140a497081765af48e849093b
             url: require('../../assets/images/category_images/airpods.png'),
             desc: 'Wireless earphones with seamless integration.',
           },
@@ -196,7 +208,11 @@ const Navbar = ({ heroHeight, setBlurBackground }) => {
           isSearchClicked || productHovered ? 'colored-nav' : ''
         }`}
       >
+<<<<<<< HEAD
         <div className="logo-container">
+=======
+        <Link to="/" className="logo-container">
+>>>>>>> ef28d929a132173140a497081765af48e849093b
           <svg
             className="svg logo"
             width="52"
@@ -220,7 +236,11 @@ const Navbar = ({ heroHeight, setBlurBackground }) => {
           </svg>
 
           <span>iSTORE</span>
+<<<<<<< HEAD
         </div>
+=======
+        </Link>
+>>>>>>> ef28d929a132173140a497081765af48e849093b
         <ul className="nav-options">
           <li className="nav-link">
             <Link to="/">Home </Link>
@@ -403,7 +423,11 @@ const Navbar = ({ heroHeight, setBlurBackground }) => {
                 {fetchedData.map((category) => (
                   <li className="drop__down__sub">
                     <Link
+<<<<<<< HEAD
                       to={`/${'AppleMacbook'.toLowerCase().replace(/\s/g, '')}`}
+=======
+                      to={`/${category.name.toLowerCase().replace(/\s/g, '')}`}
+>>>>>>> ef28d929a132173140a497081765af48e849093b
                       className="drop__down__header__sub"
                     >
                       {category.name}

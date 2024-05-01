@@ -139,6 +139,7 @@ const EditCategory = () => {
     e.preventDefault();
     const data = {
       categoryName: categoryName,
+<<<<<<< HEAD
       categoryHeroTitle: categoryHeroTitle,
       categoryHeroDescription: categoryHeroDescription,
       featuredProductName: featuredProductName,
@@ -156,6 +157,24 @@ const EditCategory = () => {
     setTimeout(() => {
       navigate('/admin/products/categories/');
     }, 1000);
+=======
+      heroTitle: categoryHeroTitle,
+      heroDescription: categoryHeroDescription,
+      featuredProductName: featuredProductName,
+      overview: categoryOverview,
+      performance: categoryPerformance,
+      integration: categoryIntegration,
+      design: categoryDesign,
+      // featuredImage: previewImageFeatured,
+      // heroImage: previewImageHero,
+    };
+    const url = `v1/category/${category.id}`;
+    alert(`Category Edited: ${category.id}`);
+    performFetchPut(url, data);
+    // setTimeout(() => {
+    //   navigate('/admin/products/categories/');
+    // }, 1000);
+>>>>>>> ef28d929a132173140a497081765af48e849093b
   };
 
   const handleFeatureImageChange = (event) => {

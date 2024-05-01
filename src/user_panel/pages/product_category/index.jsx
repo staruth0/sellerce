@@ -28,7 +28,18 @@ const Category = () => {
   }, [name]);
 
   if (loading) {
+<<<<<<< HEAD
     return <div className="container" style={{ height: '100vh' }}></div>;
+=======
+    return (
+      <section>
+        <div
+          className="jim container"
+          style={{ height: '100vh', marginTop: '100px' }}
+        ></div>
+      </section>
+    );
+>>>>>>> ef28d929a132173140a497081765af48e849093b
   }
 
   if (!category) {

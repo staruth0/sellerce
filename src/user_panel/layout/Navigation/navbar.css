@@ -70,13 +70,23 @@ svg {
   font-size: 12px;
   font-weight: 600;
   gap: 8px;
+<<<<<<< HEAD
   cursor: default;
+=======
+>>>>>>> ef28d929a132173140a497081765af48e849093b
 }
 
 .logo-container > span {
   margin-top: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.dark .logo-container > span {
+  color: #ffffff;
+}
+
+>>>>>>> ef28d929a132173140a497081765af48e849093b
 .cart-wishlist,
 .nav-tools,
 li {

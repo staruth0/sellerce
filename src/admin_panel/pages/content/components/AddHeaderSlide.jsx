@@ -28,6 +28,7 @@ const AddHeaderSlide = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+<<<<<<< HEAD
     const apiUrl = 'api/content/home/add';
 
     const data = {
@@ -40,11 +41,23 @@ const AddHeaderSlide = () => {
     };
 
     console.log(data);
+=======
+    const apiUrl = 'v1/hero';
+
+    const data = {
+      product_name: productName,
+      category_name: category,
+      description: description,
+      slide_position: position,
+    };
+
+>>>>>>> ef28d929a132173140a497081765af48e849093b
     alert(
       `You added the header slide with the product name as ${data.product_name}`
     );
 
     PerformFetchPost(apiUrl, data);
+<<<<<<< HEAD
     setProductName('');
     setProductName('');
     setDescription('');
@@ -52,6 +65,8 @@ const AddHeaderSlide = () => {
     setUrl('');
     setPosition('');
     setPreviewImage('');
+=======
+>>>>>>> ef28d929a132173140a497081765af48e849093b
   };
 
   return (
@@ -117,6 +132,7 @@ const AddHeaderSlide = () => {
                 }}
               />
               <TextInputValue
+<<<<<<< HEAD
                 name="URL"
                 label="URL"
                 placeholder="url to product"
@@ -126,6 +142,8 @@ const AddHeaderSlide = () => {
                 }}
               />
               <TextInputValue
+=======
+>>>>>>> ef28d929a132173140a497081765af48e849093b
                 name="position"
                 label="Position"
                 placeholder="Position"
