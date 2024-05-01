@@ -21,15 +21,6 @@ const AddCategory = () => {
     e.preventDefault();
     const data = {
       categoryName: categoryName,
-<<<<<<< HEAD
-      categoryHeroTitle: categoryHeroTitle,
-      categoryHeroDescription: categoryHeroDescription,
-      featuredProductName: featuredProductName,
-      categoryOverview: categoryOverview,
-      categoryPerformance: categoryPerformance,
-      categoryIntegration: categoryIntegration,
-      categoryDesign: categoryDesign,
-=======
       heroTitle: categoryHeroTitle,
       heroDescription: categoryHeroDescription,
       featuredProductName: featuredProductName,
@@ -37,18 +28,13 @@ const AddCategory = () => {
       performance: categoryPerformance,
       integration: categoryIntegration,
       design: categoryDesign,
->>>>>>> ef28d929a132173140a497081765af48e849093b
       // featuredImage: previewImageFeatured,
       // heroImage: previewImageHero,
     };
     const url = 'v1/category';
 
-<<<<<<< HEAD
-    performFetchPost(url, data, navigate('/admin/products/categories'));
-=======
     performFetchPost(url, data);
     navigate('/admin/products/categories');
->>>>>>> ef28d929a132173140a497081765af48e849093b
   };
 
   const handleFeatureImageChange = (event) => {

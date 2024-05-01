@@ -11,10 +11,6 @@
 # testing
 /coverage
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ef28d929a132173140a497081765af48e849093b
 # production
 /build
 

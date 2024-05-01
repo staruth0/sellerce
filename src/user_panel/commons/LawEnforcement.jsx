@@ -4,13 +4,9 @@ const LawEnforcement = () => {
   return (
     <section id="law-enforcement">
       <div className="container" style={{ backgroundColor: '#fafafc' }}>
-<<<<<<< HEAD
-        <h2 style={{ fontSize: '18px' }}>Law Enforcement</h2>
-=======
         <h2 style={{ fontSize: '18px', marginBottom: '1rem' }}>
           Law Enforcement
         </h2>
->>>>>>> ef28d929a132173140a497081765af48e849093b
         <p style={{ fontSize: '14px' }}>
           1. Trade-in values will vary based on the condition, year, and
           configuration of your eligible trade-in device. Not all devices are
