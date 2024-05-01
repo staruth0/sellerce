@@ -4,9 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
+/sass
+/Routes.docx
+/todo.txt
 
 # testing
 /coverage
+
 
 # production
 /build
