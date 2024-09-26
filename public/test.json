@@ -1,0 +1,38 @@
+[
+    {
+      "_id": 1,
+      "name": "iPhone",
+      "url": "../../assets/images/category_images/iphone.png",
+      "desc": "Revolutionary smartphones with powerful features."
+    },
+    {
+      "_id": 2,
+      "name": "Mac",
+      "url": "../../assets/images/category_images/macbooks.png",
+      "desc": "Sleek and powerful for all your computing needs."
+    },
+    {
+      "_id": 3,
+      "name": "iPad",
+      "url": "../../assets/images/category_images/ipads.png",
+      "desc": "Versatile tablets for work, creativity, and entertainment."
+    },
+    {
+      "_id": 4,
+      "name": "Apple Watch",
+      "url": "../../assets/images/category_images/iwatch.png",
+      "desc": "Smartwatches that keep you connected and fit."
+    },
+    {
+      "_id": 5,
+      "name": "AirPods",
+      "url": "./../assets/images/category_images/aipods.png",
+      "desc": "Wireless earphones with seamless integration."
+    },
+    {
+      "_id": 6,
+      "name": "iMac",
+      "url": "../../assets/images/category_images/iwatch.png",
+      "desc": "All-in-one desktop computers with stunning displays."
+    }
+  ]
