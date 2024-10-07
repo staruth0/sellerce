@@ -83,7 +83,7 @@ const PopularCategory = ({ blurBackground }) => {
                 <li className="cateogry-name-section-large">Apple iPhone</li>
                 <li className="shop-category-button">
                   <Link
-                    to={`/${'iphone'.toLowerCase().replace(/\s/g, '')}`}
+                    to={`/${'phone'.toLowerCase().replace(/\s/g, '')}`}
                     className="showcase-link shop-watch-category"
                   >
                     SHOP NOW
@@ -119,7 +119,7 @@ const PopularCategory = ({ blurBackground }) => {
                 </li>
                 <li className="shop-category-button">
                   <Link
-                    to={`/${'tv-home'.toLowerCase().replace(/\s/g, '')}`}
+                    to={`/${'tvandhome'.toLowerCase().replace(/\s/g, '')}`}
                     className="showcase-link shop-watch-category"
                   >
                     SHOP NOW
@@ -240,7 +240,7 @@ const PopularCategory = ({ blurBackground }) => {
               <li className="cateogry-name-section-large">Apple Airpods</li>
               <li className="shop-category-button">
                 <Link
-                  to={`/${'airpod'.toLowerCase().replace(/\s/g, '')}`}
+                  to={`/${'airpods'.toLowerCase().replace(/\s/g, '')}`}
                   className="showcase-link shop-watch-category"
                 >
                   SHOP NOW

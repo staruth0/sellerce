@@ -53,9 +53,13 @@ import Reviews from './admin_panel/pages/reviews';
 import Orders from './admin_panel/pages/orders';
 import OrderDetails from './admin_panel/pages/orders/components/OrderDetails';
 import EditProduct from './admin_panel/pages/products/components/EditProduct';
+import EmailVerification from './user_panel/pages/verifyEmail/verifyemail';
+import ResetPassword from './user_panel/pages/ResetPassword/EnterNewPassWord/reset';
+import EnterEmail from './user_panel/pages/ResetPassword/enterEmail/enterEmail';
+// import RootLayout from './user_panel/layout/RootLayout';
 // creating various routers
-
 const router = createBrowserRouter(
+  
   createRoutesFromElements(
     // rootlayout
     <>
@@ -79,7 +83,10 @@ const router = createBrowserRouter(
       </Route>
       {/* login and register */}
       <Route path="register" element={<Register />} />
-      <Route path="login" element={<Login />} />
+      <Route path="login" element={<Login redirectTo="/" />} />
+      <Route path="verify-reset/verify" element={<EmailVerification/>}/>
+      <Route  path="verify-reset/reset-password/email" element={<EnterEmail/>}/>
+      <Route path="verify-reset/reset-password/new-password" element={<ResetPassword/>}/>
 
       {/* ==============================
       ==========Admin Routes============
@@ -130,14 +137,18 @@ const router = createBrowserRouter(
       {/* admin login and register */}
       <Route path="/admin/login" element={<LoginAdmin />} />
       <Route path="/admin/register" element={<RegisterAdmin />} />
-
+      
       {/* notfound */}
-      <Route path="*" element={<NotFound />} />
+      // <Route path="*" element={<NotFound />} />
+      // <Route path='/verify-reset' element={<EmailVerification/>}>
+      
+      // </Route>
     </>
   )
 );
 
 function App() {
+  
   return <RouterProvider router={router} />;
 }
 

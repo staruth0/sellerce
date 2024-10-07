@@ -4,6 +4,7 @@ import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
 const RootLayout = ({ heroHeight, setBlurBackground, blurBackground }) => {
+  
   return (
     <>
       <Navbar heroHeight={heroHeight} setBlurBackground={setBlurBackground} />

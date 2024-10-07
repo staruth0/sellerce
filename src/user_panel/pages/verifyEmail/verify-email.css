@@ -1,0 +1,51 @@
+.verificatio-reset-main{
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   background-color: #ccc;
+}
+.verification-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 98%;
+    max-height: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.verification-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.verification-message {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+.verification-error-message{
+    color: rgb(255, 85, 0);
+}
+.verification-success-message{
+    color: rgb(9, 106, 40);
+}
+.verification-message-neutral{
+    color: black;
+}
+.verification-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.verification-button:hover {
+    background-color: #0056b3;
+}

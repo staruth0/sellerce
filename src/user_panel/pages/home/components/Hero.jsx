@@ -23,7 +23,7 @@ const HeroComponent = ({setHeight, blurBackground}) => {
     {
       _id: 3,
       image: [require('../../../assets/images/landing-2(0).png'), require('../../../assets/images/landing-2(1).png'), require('../../../assets/images/landing-2(2).png'), require('../../../assets/images/landing-2(3).png'), require('../../../assets/images/landing-2(4).png')],
-      category: "Airpod",
+      category: "Airpods",
       model: "MAX",
       caption: "Sound beyond just what you hear",
       varients: [require('../../../assets/images/finish-pink-202011.png'), require('../../../assets/images/finish-skyblue-202011.png'), require('../../../assets/images/finish-spacegray-202011.png'), require('../../../assets/images/finish-green-202011.png'), require('../../../assets/images/finish-silver-202011.png')]

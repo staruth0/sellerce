@@ -1,0 +1,104 @@
+.sign-up-button.primary-btn.user-profile {
+    position: relative;
+    background-color: inherit;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .view-wrapper{
+    font-size: 500;
+    font-size: .9rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #cde5f3;
+    border: 1px solid rgb(1, 10, 38);
+    box-shadow: 0 2px 4px rgba(100, 0, 100, 0.1);
+    padding: 6px;
+  }
+  .view{
+    font-size: 1em;
+  }
+  .user-name{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family:serif;
+  }
+  .user-email{
+    color: #011019;
+    font-size: x-small;
+  }
+  .personal-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .user-name.darks{
+    color: rgb(2, 18, 41);
+  }
+  .user-name.white{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .dropdown {
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    text-align: center;
+    margin: 0;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, visibility 0.4s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 15px !important;
+    box-sizing: border-box;
+    min-width: 15vw;
+    width: 100%;
+  }
+  
+  .user-profile:hover .dropdown {
+    visibility: visible;
+    max-height: 70vh;
+  }
+  
+
+  .dropdown>div>div>.profile-picture{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    
+  }
+
+  .dropdown>div:first-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 14vh;
+    border: 1px solid #e8f5fc;
+    /* box-shadow: 0 2px 4px rgba(100, 100, 100, 0.1); */
+  }
+  .sign-up-button.primary-btn.logout{
+    width: 100% !important;
+    /* font-size: 1em; */
+    color: #b1dbf4;
+    background-color: #f2f7fa
+  }
